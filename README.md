@@ -12,6 +12,7 @@ This script is a simple macro tool that sends predefined messages when specific 
 - Python 3.x
 - `pyautogui` library
 - `keyboard` library
+- install using `pip install pyautogui` and `pip install keyboard`
 - Windows OS (developed tested on Windows 10)
 
 ## Example Output

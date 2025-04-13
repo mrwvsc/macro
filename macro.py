@@ -39,7 +39,7 @@ print("Macro script started, press ctrl+shift+9 to stop and ctrl+shift+0 to star
 print("Press ctrl+shift+m to update the messages") # message to indicate that the messages can be updated
 define() # call the define function to get the messages from the user
 
-interval = 0.000000000000000000001 #  interval between key presses, very small to simulate fast typing
+interval = 0.000000001 #  interval between key presses, very small to simulate fast typing
 sleeptime = 0.5 # sleep time between after message is sent
 
 print("Script started")
@@ -62,50 +62,50 @@ while True:
     
     if macro_running:
         if kb.is_pressed('ctrl+shift+1'): # first message
-            time.sleep(0.5)
+            time.sleep(sleeptime)
             pag.typewrite(val1, interval) # type the message
             pag.press('enter')
             print(f"Sent message \"{val1}\"")
-            time.sleep(0.5)
+            time.sleep(sleeptime)
         elif kb.is_pressed('ctrl+shift+2'): # second message
-            time.sleep(0.5)
+            time.sleep(sleeptime)
             pag.typewrite(val2, interval) # type the message
             pag.press('enter')
             print(f"Sent message \"{val2}\"")
-            time.sleep(0.5)
+            time.sleep(sleeptime)
         elif kb.is_pressed('ctrl+shift+3'): # third message
-            time.sleep(0.5)
+            time.sleep(sleeptime)
             pag.typewrite(val3, interval) # type the message
             pag.press('enter')
             print(f"Sent message \"{val3}\"")
-            time.sleep(0.5)
+            time.sleep(sleeptime)
         elif kb.is_pressed('ctrl+shift+4'): # fourth message
-            time.sleep(0.5)
+            time.sleep(sleeptime)
             pag.typewrite(val4, interval) # type the message
             pag.press('enter')
             print(f"Sent message \"{val4}\"")
-            time.sleep(0.5)
+            time.sleep(sleeptime)
         elif kb.is_pressed('ctrl+shift+5'): # fifth message
-            time.sleep(0.5)
+            time.sleep(sleeptime)
             pag.typewrite(val5, interval) # type the message
             pag.press('enter')
             print(f"Sent message \"{val5}\"")
-            time.sleep(0.5)
+            time.sleep(sleeptime)
         elif kb.is_pressed('ctrl+shift+6'): # sixth message
-            time.sleep(0.5)
+            time.sleep(sleeptime)
             pag.typewrite(val6, interval) # type the message
             pag.press('enter')
             print(f"Sent message \"{val6}\"")
-            time.sleep(0.5)
+            time.sleep(sleeptime)
         elif kb.is_pressed('ctrl+shift+7'): # seventh message
-            time.sleep(0.5)
+            time.sleep(sleeptime)
             pag.typewrite(val7, interval) # type the message
             pag.press('enter')
             print(f"Sent message \"{val7}\"")
-            time.sleep(0.5)
+            time.sleep(sleeptime)
         elif kb.is_pressed('ctrl+shift+8'): # eigth message
-            time.sleep(0.5)
+            time.sleep(sleeptime)
             pag.typewrite(val8, interval) # type the message 
             pag.press('enter')
             print(f"Sent message: \"{val8}\"")
-            time.sleep(0.5)
+            time.sleep(sleeptime)

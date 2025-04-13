@@ -20,9 +20,9 @@ import pyautogui as pag, keyboard as kb, time
 
 def define():
     # this function defines the messages to be sent
-    # it is called when the script is started
-    # the messages are defined as global variables so they can be accessed by the main loop
+    # reset global variables to avoid appending new input to previous values
     global val1, val2, val3, val4, val5, val6, val7, val8
+    val1 = val2 = val3 = val4 = val5 = val6 = val7 = val8 = ""  # reset values
     val1 = input('insert value 1: ') # first message to be sent
     val2 = input('insert value 2: ') # second message to be sent
     val3 = input('insert value 3: ') # third message to be sent
